@@ -13,3 +13,10 @@ def plot(r_dates, r_min_temp, r_max_temp, b_dates, b_min_temp, b_max_temp):
     ax.plot(b_dates, b_min_temp, b_max_temp,marker="o",linestyle='None', color="c")
 
     plt.show()
+
+def graph(times, teacher_rates, random_rates):
+    x = list(range(times))
+    plt.plot(x, teacher_rates, color="red")
+    plt.plot(x, random_rates, color="blue")
+
+    plt.show()
