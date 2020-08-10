@@ -16,6 +16,9 @@ def plot(r_dates, r_min_temp, r_max_temp, b_dates, b_min_temp, b_max_temp):
 
 def graph(times, teacher_rates, random_rates):
     x = list(range(times))
+
+    plt.xlabel("times(回)")
+    plt.ylabel("accuracy rate")
     plt.plot(x, teacher_rates, color="red")
     plt.plot(x, random_rates, color="blue")
 
